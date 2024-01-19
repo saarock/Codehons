@@ -1,0 +1,50 @@
+.navs {
+    padding: 1rem;
+    /* box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px; */
+    position: sticky;
+    bottom: 0;
+
+}
+
+.all_navs {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    color: white;
+}
+
+.navbars {
+    display: flex;
+
+}
+
+.nav_a {
+    font-weight: 500;
+    font-size: 1.1rem;
+    text-transform: uppercase;
+    text-decoration: none;
+    color: white;
+
+
+
+}
+
+.nav_a:hover {
+    color: var(--dark-green);
+}
+
+.nav_a:focus {
+    border: 1px dashed var(--dark-green);
+}
+
+.nav {
+    margin-left: 2rem;
+    list-style-type: none;
+}
+
+.open_CONTACT {
+    font-size: 2rem;
+    cursor: pointer;
+    font-weight: bold;
+
+}

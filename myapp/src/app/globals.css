@@ -1,0 +1,73 @@
+/* @tailwind base;
+@tailwind components;
+@tailwind utilities; */
+
+:root {
+  --foreground-rgb: 0, 0, 0;
+  --background-start-rgb: 214, 219, 220;
+  --background-end-rgb: 255, 255, 255;
+  --like-white-color: rgba(235, 222, 222, 0.813);
+  --lite-green: rgba(0, 128, 0, 0.365);
+  --dark-green: rgba(0, 128, 0, 0.623);
+}
+
+
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: 'Roboto Condensed', sans-serif;
+  position: relative;
+}
+
+.one {
+  /* height: 100%; */
+  width: 100%;
+  background: linear-gradient(#12C2E9, #F64F59);
+  height: fit-content;
+  overflow: hidden;
+
+}
+
+main {
+  overflow: hidden;
+}
+
+header {
+  /* background: linear-gradient(#12C2E9, #12C2E9); */
+  background: linear-gradient(#12c2e9cd, #12C2E9);
+}
+
+
+.mid {
+  display: flex;
+  /* justify-content: center; */
+  align-items: center;
+  width: 90rem;
+  /* background-color: green; */
+
+}
+
+#mid {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 90rem;
+
+}
+
+footer {
+  background-color: black;
+
+  /* height: 10rem; */
+}
+
+.codehons {
+  color: #F64F59;
+  font-size: 1.4rem;
+  font-weight: bold;
+}

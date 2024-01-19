@@ -1,0 +1,153 @@
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    overflow: hidden;
+
+}
+
+.all_contain {
+    display: flex;
+    width: 90%;
+    justify-content: center;
+    align-items: center;
+}
+
+.left {
+    padding: 6rem;
+    width: 52rem;
+}
+
+.right {
+    z-index: 999;
+
+}
+
+.top h1 {
+    font-size: 3rem;
+    color: white;
+    font-weight: bold;
+    transition: 1.5s;
+}
+
+.top {
+    padding: 0.5rem;
+}
+
+.middle {
+    padding: 0.5rem;
+}
+
+.middle p {
+    color: var(--like-white-color);
+    font-size: 1.2rem;
+    font-weight: 600;
+    z-index: 999;
+}
+
+.bottom {
+    padding: 0.5rem;
+
+}
+
+.download_cv {
+    background-color: #ff293752;
+    padding: 1.5rem;
+    /* width: 5rem; */
+    border: none;
+    font-size: 1rem;
+    font-weight: bold;
+    color: var(--like-white-color);
+    cursor: pointer;
+    border-radius: 1rem;
+
+}
+
+.download_cv:hover {
+    background-color: #ff293752;
+}
+
+.download_cv:focus {
+    outline: 2px solid #c03a43;
+}
+
+.watch {
+    margin-left: 1rem;
+    /* background-color: rgba(0, 128, 0, 0.365); */
+    padding: 1.5rem;
+    /* width: 5rem; */
+    border: none;
+    font-size: 1rem;
+    font-weight: bold;
+    color: rgba(235, 222, 222, 0.813);
+    cursor: pointer;
+    border-radius: 1rem;
+    outline: 2px solid rgba(0, 128, 0, 0.365);
+
+
+}
+
+.watch::after {
+    content: ">>";
+}
+
+
+.img_me {
+    padding: 2rem;
+    height: 52vh;
+    width: 52vh;
+    /* background-color: pink; */
+    border-top: 6rem solid rgba(0, 128, 0, 0.365);
+    /* border-bottom: 6rem solid rgba(0, 128, 0, 0.365); */
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    animation: border_up_down 2s ease-in-out infinite;
+    animation-delay: calc(0.1s);
+
+}
+
+@keyframes border_up_down {
+
+    0%,
+    100% {
+        transform: translateY(0);
+    }
+
+    40%,
+    60% {
+        transform: translateY(50px);
+    }
+}
+
+
+.me {
+    width: 22rem;
+    height: 22rem;
+    clip-path: polygon(50% 0%, 100% 20%, 100% 75%, 50% 100%, 0% 75%, 0% 20%);
+}
+
+
+.shadow {
+    background: linear-gradient(#12c2e969, #f64f5a7b);
+    width: 22rem;
+    position: absolute;
+    height: 100vh;
+    right: 10%;
+    border-radius: 20rem;
+    transform: rotate(35deg);
+    z-index: 1;
+
+
+}
+
+.extra {
+    color: var(--dark-green);
+    font-weight: bold;
+    font-size: 4rem;
+    text-shadow: 2px 1px rgba(0, 128, 0, 0.623);
+
+
+}
