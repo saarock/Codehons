@@ -1,3 +1,4 @@
+"use client"
 import styles from './Services.module.css';
 import Image from 'next/image';
 import { BsBackpack2Fill } from "react-icons/bs";
@@ -12,7 +13,90 @@ import { SiDjango } from "react-icons/si";
 import { FaJava } from "react-icons/fa";
 import { CiDatabase } from "react-icons/ci";
 import { FaCirclePlay } from "react-icons/fa6";
+import React, { useRef, useEffect, useState } from 'react';
 export default function Services() {
+    const [hoverDirection, setHoverDirection] = useState<string>('');
+
+    const first = (e: React.MouseEvent<HTMLDivElement>) => {
+        const element = e.target as HTMLDivElement;
+        if (element) {
+            // Check if the clicked element is the parent element (styles.rule)
+            if (element.classList.contains(styles.rule)) {
+                element.classList.toggle(styles.short);
+            } else {
+
+                // Toggle the class on the parent only if the clicked element is not a child
+                const parentElement = element.closest(`.${styles.rule}`);
+                if (parentElement) {
+                    parentElement.classList.toggle(styles.short);
+                }
+
+            }
+
+        }
+    }
+
+    const second = (e: React.MouseEvent<HTMLDivElement>) => {
+        const element = e.target as HTMLDivElement;
+        if (element) {
+            // Check if the clicked element is the parent element (styles.rule)
+            if (element.classList.contains(styles.rule)) {
+                element.classList.toggle(styles.short);
+            } else {
+
+                // Toggle the class on the parent only if the clicked element is not a child
+                const parentElement = element.closest(`.${styles.rule}`);
+                if (parentElement) {
+                    parentElement.classList.toggle(styles.short);
+                }
+
+            }
+
+        }
+    }
+
+
+    const third = (e: React.MouseEvent<HTMLDivElement>) => {
+        const element = e.target as HTMLDivElement;
+        if (element) {
+            // Check if the clicked element is the parent element (styles.rule)
+            if (element.classList.contains(styles.rule)) {
+                element.classList.toggle(styles.short);
+            } else {
+
+                // Toggle the class on the parent only if the clicked element is not a child
+                const parentElement = element.closest(`.${styles.rule}`);
+                if (parentElement) {
+                    parentElement.classList.toggle(styles.short);
+                }
+
+            }
+
+
+        }
+    }
+
+
+    const div1 = (e: React.MouseEvent<HTMLDivElement>) => {
+
+        const { clientX, clientY } = e;
+        const target = e.currentTarget;
+        const { left, top, width, height } = target.getBoundingClientRect();
+        const offsetX = clientX - left - width / 2;
+        const offsetY = clientY - top - height / 2;
+
+        let direction = '';
+
+        if (Math.abs(offsetX) > Math.abs(offsetY)) {
+            direction = offsetX > 0 ? 'right__' : 'left__';
+        } else {
+            direction = offsetY > 0 ? 'bottom__' : 'top__';
+        }
+
+        setHoverDirection(direction);
+    }
+
+    // Empty dependency array ensures that the effect runs only once, similar to componentDidMount
     return (
         <>
             <div className={styles.services} id="services">
@@ -31,7 +115,7 @@ export default function Services() {
                         </div>
                         <div className={styles.bottom}>
 
-                            <div className={styles.bottom_left}>
+                            <div className={`${styles.bottom_left} ${hoverDirection}`} onMouseOver={div1}>
                                 <div className={styles.icon}>
                                     <BsBackpack2Fill />
                                 </div>
@@ -88,13 +172,16 @@ export default function Services() {
                 <div className={styles.logo_back}>
 
                     {/* JAVASCRIPT */}
-                    <FaCirclePlay />
+                    <span className={styles.playIcon}>
+                        <FaCirclePlay />
+                    </span>
+
                     <div className={styles.programming_langauges}>
                         <div className="mid">
 
                             <div className={styles.allpro}>
                                 <div className={styles.pro_div}>
-                                    <h2>HTML</h2>
+
                                     <span className={styles.icon_pro}>
                                         <AiOutlineHtml5 />
                                     </span>
@@ -103,7 +190,7 @@ export default function Services() {
 
 
                                 <div className={styles.pro_div}>
-                                    <h2>CSS</h2>
+
                                     <span className={styles.icon_pro}>
                                         <FaCss3 />
                                     </span>
@@ -112,7 +199,7 @@ export default function Services() {
 
 
                                 <div className={styles.pro_div}>
-                                    <h2>Sass</h2>
+
                                     <span className={styles.icon_pro}>
                                         <FaCss3 />
                                     </span>
@@ -121,7 +208,7 @@ export default function Services() {
 
 
                                 <div className={styles.pro_div}>
-                                    <h2>javaScript</h2>
+
                                     <span className={styles.icon_pro}>
                                         <TbBrandJavascript />
                                     </span>
@@ -130,7 +217,7 @@ export default function Services() {
 
 
                                 <div className={styles.pro_div}>
-                                    <h2>React</h2>
+
                                     <span className={styles.icon_pro}>
                                         <FaReact />
                                     </span>
@@ -138,7 +225,7 @@ export default function Services() {
                                 </div>
 
                                 <div className={styles.pro_div}>
-                                    <h2>Nextjs</h2>
+
                                     <span className={styles.icon_pro}>
                                         < SiNextdotjs />
                                     </span>
@@ -148,7 +235,7 @@ export default function Services() {
 
 
                                 <div className={styles.pro_div}>
-                                    <h2>Python</h2>
+
                                     <span className={styles.icon_pro}>
                                         <SiPython />
                                     </span>
@@ -156,7 +243,7 @@ export default function Services() {
                                 </div>
 
                                 <div className={styles.pro_div}>
-                                    <h2>Django</h2>
+
                                     <span className={styles.icon_pro}>
                                         <SiDjango />
                                     </span>
@@ -164,7 +251,7 @@ export default function Services() {
                                 </div>
 
                                 <div className={styles.pro_div}>
-                                    <h2>Data Visualizations</h2>
+
                                     <span className={styles.icon_pro}>
                                         <CiDatabase />
                                     </span>
@@ -173,7 +260,7 @@ export default function Services() {
 
 
                                 <div className={styles.pro_div}>
-                                    <h2>Computer Architecture/C/Java</h2>
+
                                     <span className={styles.icon_pro}>
                                         <FaJava />
                                     </span>
@@ -191,8 +278,76 @@ export default function Services() {
                     </div>
                 </div>
                 <div className={styles.animations}>
-                    <h1>YOUR TRUNS IS MY WEALTH</h1>
-                    <h2>YOUR TRUNS IS MY WEALTH</h2>
+                    <div className={styles.animate}>
+                        <ul className={styles.scroller_inner}>
+                            <li>Node js</li>
+                            <li>Node TS</li>
+                            <li>python</li>
+                            <li>react</li>
+                            <li>next js</li>
+                            <li>js</li>
+                            <li>java</li>
+                            <li>computer architecture</li>
+
+                            <li>Node js</li>
+                            <li>Node TS</li>
+                            <li>python</li>
+                            <li>react</li>
+                            <li>next js</li>
+                            <li>js</li>
+                            <li>java</li>
+                            <li>computer architecture</li>
+
+                        </ul>
+                    </div>
+
+
+                    <div className={styles.all_}>
+                        <div id="mid">
+                            <div className={`${styles.rule} ${styles.rule_}`} onClick={first}>
+                                <div className={styles.q}>
+                                    <div className={styles.left_}> Why Codehons? </div>
+                                    <div className={styles.right_}>+</div>
+                                </div>
+
+                                <div className={styles.ans}>
+                                    Contrary to popular belief, Lorem Ipsum is not simply random text.
+                                    It has roots in a piece of classical Latin literature from 45 BC,
+                                    making it over 2000 years old. Richard McClintock, a Latin
+                                    professor at Hampden-Sydney College in Virginia, looked up one
+                                </div>
+
+                            </div>
+                            <div className={styles.rule} onClick={second}>
+                                <div className={styles.q}>
+                                    <div className={styles.left_}> Why Codehons? </div>
+                                    <div className={styles.right_}>+</div>
+                                </div>
+
+                                <div className={styles.ans} >
+                                    Contrary to popular belief, Lorem Ipsum is not simply random text.
+                                    It has roots in a piece of classical Latin literature from 45 BC,
+                                    making it over 2000 years old. Richard McClintock, a Latin
+                                    professor at Hampden-Sydney College in Virginia, looked up one
+                                </div>
+                            </div>
+                            <div className={styles.rule} onClick={third}>
+                                <div className={styles.q}>
+                                    <div className={styles.left_}> Why Codehons? </div>
+                                    <div className={styles.right_}>+</div>
+                                </div>
+
+                                <div className={styles.ans}>
+                                    Contrary to popular belief, Lorem Ipsum is not simply random text.
+                                    It has roots in a piece of classical Latin literature from 45 BC,
+                                    making it over 2000 years old. Richard McClintock, a Latin
+                                    professor at Hampden-Sydney College in Virginia, looked up one
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+
                 </div>
 
 

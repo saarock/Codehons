@@ -23,6 +23,10 @@ body {
   position: relative;
 }
 
+body:hover {
+  background-color: rgba(255, 255, 255, 0.5);
+}
+
 .one {
   /* height: 100%; */
   width: 100%;
@@ -47,7 +51,7 @@ header {
   /* justify-content: center; */
   align-items: center;
   width: 90rem;
-  /* background-color: green; */
+
 
 }
 
@@ -57,6 +61,7 @@ header {
   justify-content: center;
   align-items: center;
   width: 90rem;
+
 
 }
 
@@ -70,4 +75,25 @@ footer {
   color: #F64F59;
   font-size: 1.4rem;
   font-weight: bold;
+}
+
+/* Add these styles to your global or component-specific CSS */
+.light-spot {
+  position: fixed;
+  width: 0px;
+  height: 0px;
+  border-radius: 50%;
+  background-color: rgba(252, 252, 252, 0.667);
+  pointer-events: none;
+  z-index: 9999;
+  transition: background-color 0.3s ease;
+  -webkit-box-shadow: 23px -13px 279px 59px rgb(249, 249, 249);
+  -moz-box-shadow: 23px -13px 279px 59px rgba(140, 92, 140, 1);
+  box-shadow: 23px -13px 279px 59px rgb(255, 255, 255);
+}
+
+.what {
+  background: linear-gradient(black, rgba(191, 121, 191, 1));
+
+  height: 100vh;
 }

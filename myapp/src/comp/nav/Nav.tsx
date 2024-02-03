@@ -1,8 +1,17 @@
+"use client"
 import styles from './Nav.module.css';
 import Link from 'next/link';
 import Image from 'next/image';
 import { CiMenuFries } from "react-icons/ci";
+import { useEffect } from 'react';
 export default function Nav() {
+    useEffect(() => {
+
+        return () => {
+
+        }
+
+    }, [])
     return (
         <>
             <div className={styles.navs}>

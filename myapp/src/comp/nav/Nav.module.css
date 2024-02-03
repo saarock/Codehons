@@ -1,5 +1,5 @@
 .navs {
-    padding: 1rem;
+    /* padding: 1rem; */
     /* box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px; */
     position: sticky;
     bottom: 0;
@@ -24,13 +24,19 @@
     text-transform: uppercase;
     text-decoration: none;
     color: white;
+    padding: 0.6rem;
+    border-radius: 0.5rem;
 
+}
 
-
+.nav_a::after {
+    content: "";
 }
 
 .nav_a:hover {
     color: var(--dark-green);
+    background-color: #00cffe;
+
 }
 
 .nav_a:focus {
@@ -38,7 +44,7 @@
 }
 
 .nav {
-    margin-left: 2rem;
+    margin-left: 1rem;
     list-style-type: none;
 }
 

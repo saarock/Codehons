@@ -6,7 +6,10 @@
     padding-top: 4rem;
     padding-bottom: 4rem;
     position: relative;
-
+    background: url('/llsvg.svg');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
 
 }
 
@@ -106,6 +109,7 @@
 
 .box {
     background-color: black;
+    border: 2px solid var(--like-white-color);
     width: fit-content;
     padding: 2rem;
     z-index: 999;
@@ -125,9 +129,6 @@
     font-weight: bold;
 }
 
-.extra {
-    color: var(--dark-green);
-}
 
 .follow {
     margin-left: 1rem;
@@ -155,6 +156,7 @@
     border-radius: 10rem;
     /* border-left: 30px solid var(--lite-green); */
     padding-top: 3rem;
+
     /* background-color: black; */
 }
 
@@ -167,7 +169,15 @@
     align-items: center;
     border-radius: 2rem;
     padding: 2rem;
-    box-shadow: 10px 10px 1px var(--dark-green);
+    border: 2px solid var(--like-white-color);
+    -webkit-box-shadow: -11px 7px 300px -2px rgba(255, 255, 255, 1);
+    -moz-box-shadow: -11px 7px 300px -2px rgba(255, 255, 255, 1);
+    box-shadow: -11px 7px 300px -2px rgba(255, 255, 255, 1);
+
+    -webkit-box-shadow: -1px 6px 300px -59px rgba(191, 121, 191, 1);
+    -moz-box-shadow: -1px 6px 300px -59px rgba(191, 121, 191, 1);
+    box-shadow: -1px 6px 300px -59px rgba(191, 121, 191, 1);
+    /* box-shadow: 10px 10px 1px var(--dark-green); */
 
 }
 

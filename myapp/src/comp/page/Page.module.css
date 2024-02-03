@@ -5,11 +5,12 @@
     position: relative;
     overflow: hidden;
 
+
 }
 
 .all_contain {
     display: flex;
-    width: 90%;
+    width: 100%;
     justify-content: center;
     align-items: center;
 }
@@ -17,12 +18,17 @@
 .left {
     padding: 6rem;
     width: 52rem;
+
 }
 
 .right {
     z-index: 999;
-
+    /* background: linear-gradient(black, black); */
+    height: 100vh;
 }
+
+
+
 
 .top h1 {
     font-size: 3rem;
