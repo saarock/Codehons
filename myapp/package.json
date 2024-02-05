@@ -14,6 +14,7 @@
     "react": "^18",
     "react-dom": "^18",
     "react-icons": "^5.0.1",
+    "three": "^0.161.0",
     "typed.js": "^2.1.0",
     "typeface-roboto-condensed": "^1.1.13"
   },

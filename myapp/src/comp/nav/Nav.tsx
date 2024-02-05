@@ -17,7 +17,7 @@ export default function Nav() {
             <div className={styles.navs}>
                 <div className={styles.all_navs}>
                     <div className={styles.logo}>
-                        <Image src="/images/codehonslogo.png" alt='logo' width={60} height={60}></Image>
+                        <Image src="/images/codehonslogo.png" alt='logo' width={60} height={60} className={styles.logoImage} priority quality={100}></Image>
                     </div>
                     <ul className={styles.navbars}>
                         <li className={styles.nav}><Link className={styles.nav_a} href="/">Home</Link></li>

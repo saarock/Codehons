@@ -27,6 +27,10 @@ body:hover {
   background-color: rgba(255, 255, 255, 0.5);
 }
 
+body::selection {
+  background-color: (191, 121, 191, 1);
+}
+
 .one {
   /* height: 100%; */
   width: 100%;

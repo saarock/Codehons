@@ -1,16 +1,17 @@
 .about {
-    background: linear-gradient(black, rgba(191, 121, 191, 0.434));
-    background: linear-gradient(black, rgba(191, 121, 191, 0.788));
+    /* background: linear-gradient(black, rgba(191, 121, 191, 0.434)); */
+    /* background: linear-gradient(black, rgba(191, 121, 191, 0.788)); */
+    background: linear-gradient(black, black);
+    background-color: black;
     padding-top: 10rem;
     display: flex;
     justify-content: center;
     align-items: center;
     padding-top: 4rem;
     padding-bottom: 4rem;
-    -webkit-box-shadow: -1px 6px 300px -59px rgba(191, 121, 191, 1);
-    -moz-box-shadow: -1px 6px 300px -59px rgba(191, 121, 191, 1);
     box-shadow: -1px 6px 300px -59px rgba(191, 121, 191, 1);
-
+    background: rgb(2, 0, 36);
+    background: linear-gradient(90deg, rgba(2, 0, 36, 1) 0%, rgba(0, 0, 0, 1) 27%, rgba(14, 15, 13, 1) 100%);
 }
 
 
