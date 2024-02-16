@@ -6,9 +6,17 @@
   --foreground-rgb: 0, 0, 0;
   --background-start-rgb: 214, 219, 220;
   --background-end-rgb: 255, 255, 255;
-  --like-white-color: rgba(235, 222, 222, 0.813);
+  --like-white-color: rgb(235, 222, 222);
   --lite-green: rgba(0, 128, 0, 0.365);
   --dark-green: rgba(0, 128, 0, 0.623);
+  --small-text: #f64f5a7b;
+  --box-shadow-normal: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+  --div-back: white;
+  --border-radius: 25% 75% 44% 56% / 29% 30% 70% 71%;
+  --box-shadow: inset 10px 20px 20px #12C2E9, #12C2E9, #12C2E9;
+  --blue-color: #12C2E9;
+  --red-color: #F64F59;
+  /* inset -10px -20px 5px rgba(255,255,255, 0.9); */
 }
 
 
@@ -19,17 +27,23 @@
 }
 
 body {
-  font-family: 'Roboto Condensed', sans-serif;
+  /* font-family: 'Roboto Condensed', sans-serif; */
   position: relative;
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+  /* font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif; */
+  font-family: "Roboto Condensed", sans-serif;
+  font-family: 'Roboto', sans-serif;
+  font-family: 'Roboto', sans-serif;
+
+  /* background-color: black; */
+  background-color: black;
+  color: white;
+
+  /* font-family: Arial, Helvetica, sans-serif; */
 }
 
-body:hover {
-  background-color: rgba(255, 255, 255, 0.5);
-}
 
-body::selection {
-  background-color: (191, 121, 191, 1);
-}
 
 .one {
   /* height: 100%; */
@@ -46,7 +60,69 @@ main {
 
 header {
   /* background: linear-gradient(#12C2E9, #12C2E9); */
+  /* position: sticky;
+  top: 0;
+  z-index: 1000; */
   background: linear-gradient(#12c2e9cd, #12C2E9);
+  transition: 0.2s ease-in-out;
+  padding: 1rem;
+}
+
+.STICKY_NAV {
+  position: -webkit-sticky;
+  /* For Safari */
+  position: sticky;
+  top: 0;
+  background-color: #ffffff;
+  /* Background color */
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  /* Optional: Add shadow for visual effect */
+  /* Add any other styles you want for the sticky navigation bar */
+  z-index: 1000;
+  border-bottom-left-radius: 2rem;
+  border-bottom-right-radius: 2rem;
+
+
+  /* Ensure it's above other content */
+}
+
+.scrollTop {
+  display: none;
+}
+
+.go_top_show {
+  display: block;
+  position: fixed;
+  bottom: 2rem;
+  right: 2rem;
+  z-index: 1000;
+
+}
+
+.go_top_show::before {
+  content: "back to Top";
+  background-color: black;
+  color: white;
+  padding: 0.4rem;
+  border: 2px solid white;
+  border-radius: 1rem;
+}
+
+
+
+.go_top_show span {
+  background-color: black;
+  color: white;
+  padding: 0.6rem;
+  width: 5rem;
+  height: 5rem;
+  border-radius: 50%;
+  border: 5px solid var(--blue-color);
+  cursor: pointer;
+}
+
+.go_top_show span:hover {
+  background-color: #12C2E9;
 }
 
 
@@ -70,7 +146,8 @@ header {
 }
 
 footer {
-  background-color: black;
+  /* background-color: black; */
+  background-color: red;
 
   /* height: 10rem; */
 }

@@ -14,6 +14,7 @@ import { FaJava } from "react-icons/fa";
 import { CiDatabase } from "react-icons/ci";
 import { FaCirclePlay } from "react-icons/fa6";
 import React, { useRef, useEffect, useState } from 'react';
+import Theme from '../wordpress_theme/Theme';
 export default function Services() {
     const [hoverDirection, setHoverDirection] = useState<string>('');
 
@@ -96,6 +97,13 @@ export default function Services() {
         setHoverDirection(direction);
     }
 
+
+
+    // after click 
+    const goToYoutube = () => {
+        alert('Done')
+    }
+
     // Empty dependency array ensures that the effect runs only once, similar to componentDidMount
     return (
         <>
@@ -176,13 +184,13 @@ export default function Services() {
                         <FaCirclePlay />
                     </span>
 
-                    <div className={styles.programming_langauges}>
+                    <div className={styles.programming_langauges} onClick={goToYoutube}>
                         <div className="mid">
 
                             <div className={styles.allpro}>
                                 <div className={styles.pro_div}>
 
-                                    <span className={styles.icon_pro}>
+                                    <span className={styles.icon_pro}  onClick={goToYoutube}>
                                         <AiOutlineHtml5 />
                                     </span>
 
@@ -352,6 +360,9 @@ export default function Services() {
 
 
             </div>
+
+
+            <Theme/>
         </>
     )
 }

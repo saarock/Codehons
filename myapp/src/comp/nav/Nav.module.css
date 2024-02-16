@@ -1,14 +1,9 @@
-.navs {
-    position: sticky;
-    bottom: 0;
-
-}
-
 .all_navs {
     display: flex;
     justify-content: space-around;
     align-items: center;
     color: white;
+
 }
 
 .navbars {
@@ -48,9 +43,10 @@
 
 .logo .logoImage {
     background-color: transparent;
-    height: 7rem;
-    width: 7rem;
+    height: 3rem;
+    width: 3rem;
     mix-blend-mode: color-burn;
+    border-radius: 50%;
 }
 
 .open_CONTACT {

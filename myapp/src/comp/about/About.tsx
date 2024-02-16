@@ -21,8 +21,8 @@ export default function About() {
                             </div>
 
                             <div className={styles.box}>
-                                <div className={styles.box_left}></div>
-                                <div className={styles.box_right}></div>
+                                {/* <div className={styles.box_left}></div> */}
+                                {/* <div className={styles.box_right}></div> */}
                             </div>
                         </div>
                     </div>

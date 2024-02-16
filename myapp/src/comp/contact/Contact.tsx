@@ -120,7 +120,7 @@ export default function Contact() {
 
                                     <textarea name="message" id={styles.message} cols={10} rows={30} onChange={userFormData} ></textarea>
                                     {/* <input type="text" placeholder='Type your message...' /> */}
-                                    <button onClick={sendData}>Send</button>
+                                    <button onClick={sendData} className={styles.send}>Send</button>
                                 </div>
                             </div>
                         </div>

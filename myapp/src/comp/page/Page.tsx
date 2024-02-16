@@ -64,7 +64,8 @@ export default function Page() {
 
                     <div className={styles.right}>
                         <div className={styles.img_me}>
-                            <Image src="/images/414919040_1159943758304254_13402246144835913_n.jpg" alt='myImage' height={200} width={200} className={styles.me}></Image>
+                            <Image src="/images/a.gif" alt='myImage' height={200} width={200} className={styles.me}></Image>
+                            {/* <Image src="/images/414919040_1159943758304254_13402246144835913_n.jpg" alt='myImage' height={200} width={200} className={styles.me}></Image> */}
                         </div>
                     </div>
                 </div>
