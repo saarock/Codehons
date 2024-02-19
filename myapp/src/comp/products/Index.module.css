@@ -1,0 +1,30 @@
+.productcontainer {
+    position: relative;
+    width: fit-content;
+    height: fit-content;
+    margin: 1rem;
+
+}
+
+.top {
+    opacity: 0.5;
+}
+.texts {
+    position: absolute;
+    width: 100%;
+    top: 50%;
+    right: 0%;
+    text-align: center;
+    visibility: hidden;
+}
+
+.productcontainer:hover .texts {
+    visibility: visible;
+}
+.texts button {
+    background-color: gray;
+    color: white;
+    width: 7rem;
+    height: 2rem;
+    margin: 1rem;
+}

@@ -2,17 +2,18 @@
     display: flex;
     justify-content: center;
     align-items: center;
+    /* width: 100vw; */
 }
 
 .product_choose_free {
-    width: 90%;
+    width: 100vw;
     display: flex;
     justify-content: center;
     align-items: center;
 }
 
 .mid {
-    width: 80%;
+    width: 100vw;
 }
 
 .search {

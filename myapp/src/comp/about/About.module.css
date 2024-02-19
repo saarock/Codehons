@@ -9,8 +9,8 @@
     align-items: center;
     padding-top: 4rem;
     padding-bottom: 4rem;
-    box-shadow: -1px 6px 300px -59px rgba(191, 121, 191, 1);
-    background: rgb(2, 0, 36);
+    /* box-shadow: -1px 6px 300px -59px rgba(191, 121, 191, 1); */
+    /* background: rgb(2, 0, 36); */
     background: linear-gradient(90deg, rgba(2, 0, 36, 1) 0%, black, black);
 }
 

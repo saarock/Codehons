@@ -1,14 +1,14 @@
 .contact {
-    background: linear-gradient(#F64F59, #12C2E9);
+    /* background: linear-gradient(#F64F59, #12C2E9); */
     display: flex;
     justify-content: center;
     align-items: center;
     padding-top: 4rem;
     padding-bottom: 4rem;
     position: relative;
-    background: url('/llsvg.svg');
-    background-repeat: no-repeat;
-    background-position: center;
+    /* background: url('/llsvg.svg'); */
+    /* background-repeat: no-repeat; */
+    /* background-position: center; */
     background-size: cover;
 
 }

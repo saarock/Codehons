@@ -33,6 +33,8 @@ export default function Contact() {
 
     // Send the data to the backend;
     const sendData = async () => {
+        // alert("")
+        return;
         try {
             const formData_ = new FormData();
             for (let [key, values] of Object.entries(formData)) {

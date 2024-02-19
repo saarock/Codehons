@@ -1,7 +1,13 @@
 .free {
-    height: 22rem;
+    /* height: 22rem; */
+    /* width: 100vw; */
 }
 
 .product {
-    
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    /* background-color: red; */
+    width: 100vw;
 }
