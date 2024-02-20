@@ -4,7 +4,7 @@
     align-items: center;
     position: relative;
     overflow: hidden;
-    height: 100vh;
+    /* height: 100vh; */
 }
 
 .all_contain {
@@ -12,11 +12,13 @@
     width: 100%;
     justify-content: center;
     align-items: center;
+    height: fit-content;
 }
 
 .left {
     padding: 6rem;
-    width: 55rem;
+    width: 49rem;
+    /* background-color: #12c2e969; */
 
 }
 
@@ -25,7 +27,8 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    width: 50%;
+    width: 30%;
+    /* background-color: rebeccapurple; */
 }
 
 
@@ -34,6 +37,8 @@
     color: white;
     font-weight: bold;
     transition: 1.5s;
+    z-index: 1000;
+    /* margin-top: 10rem; */
 }
 
 .top {
@@ -100,8 +105,8 @@
 
 
 .me {
-    width: 39rem;
-    height: 29rem;
+    width: 36rem;
+    height: 26rem;
     z-index: 1000;
     /* clip-path: polygon(50% 0%, 100% 20%, 100% 75%, 50% 100%, 0% 75%, 0% 20%); */
 }
@@ -128,3 +133,218 @@
 
 
 }
+
+
+/* responive */
+@media screen and (max-width: 1698px) {
+    .left {
+        /* background-color: red; */
+    }
+    
+    .top h1 {
+        font-size: 1.3rem;
+    }
+
+    .extra {
+        font-size: 3rem;
+    }
+}
+
+@media screen and (max-width: 1647px) {
+    .left {
+        width: 30rem;
+    }
+}
+
+@media screen and (max-width: 1425px) {
+    .right {
+        width: 30rem;
+        /* background-color: red; */
+        height: 26rem
+    }
+
+    .img_me {
+        width: 100%;
+        height: 100%;
+    }
+
+    .me {
+        width: 100%;
+        height: 100%;
+    }
+}
+
+@media screen and (max-width: 1272px) {
+ .extra {
+    font-size: 2rem;
+ }
+ .right {
+    width: 25rem;
+    height: 24rem;
+ }
+
+}
+@media screen and (max-width: 1181px) {
+    .all_contain {
+        display: flex;
+        flex-direction: column;
+    }
+    
+    .right {
+        width: 36rem;
+    }
+}
+
+@media screen and (max-width: 598px) {
+    .left p {
+        font-size: 1rem;
+    }
+
+    .download_cv {
+        width: 8.5rem;
+        font-size: 0.8rem;
+    }
+
+    .watch {
+        width: 8rem;
+        font-size: 0.8rem;
+    }
+}
+
+@media screen and (max-width: 590px) {
+    .left p {
+        font-size: 0.8rem;
+    }
+    .left h1 {
+        font-size: 1rem;
+    }
+    .extra {
+        font-size: 1.6rems;
+    }
+
+    .download_cv {
+        width: 8.5rem;
+        font-size: 0.8rem;
+    }
+
+    .watch {
+        width: 8rem;
+        font-size: 0.8rem;
+    }
+
+    .right {
+        width: 27rem;
+        height: 20rem;
+    }
+    
+}
+
+@media screen and (max-width: 484px) {
+    .left p {
+        font-size: 0.8rem;
+    }
+    .left h1 {
+        font-size: 1rem;
+    }
+    .extra {
+        font-size: 1.6rems;
+    }
+
+    .download_cv {
+        width: 8.5rem;
+        font-size: 0.8rem;
+    }
+
+    .watch {
+        width: 8rem;
+        font-size: 0.8rem;
+    }
+
+    .right {
+        width: 27rem;
+        height: 20rem;
+    }
+    
+}
+
+
+@media screen and (max-width: 543px) {
+    .left {
+        text-align: center;
+        /* background-color: red; */
+        height: 10rem;
+    }
+    .left p {
+        font-size: 0.8rem;
+    }
+    .left h1 {
+        font-size: 1rem;
+    }
+    .extra {
+        font-size: 1.6rem;
+    }
+
+    .download_cv {
+        width: 8.5rem;
+        font-size: 0.8rem;
+    }
+
+    .watch {
+        width: 8rem;
+        font-size: 0.8rem;
+    }
+
+    .right {
+        width: 27rem;
+        height: 20rem;
+    }
+    
+}
+
+
+@media screen and (max-width: 529px) {
+    .left {
+        justify-content: center;
+        align-items: center;
+    }
+    .middle {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .left p {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        text-wrap: wrap;
+        font-size: 0.8rem;
+        width: 80%;
+      
+        /* background-color: red; */
+    }
+   
+    .left {
+        text-wrap: wrap;
+    }
+}
+
+@media screen and (max-width: 377px) {
+    .right {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 100vw;
+        margin-top: 0.5rem;
+       
+    }
+    .img_me {
+        text-align: center;
+    }
+   .me {
+    width: 17rem;
+    height: 14rem;
+   }
+}
+
+
+

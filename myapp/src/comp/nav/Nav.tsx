@@ -3,11 +3,12 @@ import styles from './Nav.module.css';
 import Link from 'next/link';
 import Image from 'next/image';
 import { CiMenuFries } from "react-icons/ci";
-import { useEffect, useState, useRef } from 'react';
+import React, { useEffect, useState, useRef } from 'react';
 export default function Nav() {
     const [lastScroll , setLastScroll] = useState<number>(0);
     const nav = useRef<HTMLHeadElement | null>(null);
     const backToTop = useRef<HTMLDivElement | null>(null);
+    const mobNav = useRef<HTMLUListElement| null>(null);
     
     useEffect(() => {
         const handleScroll = () => {
@@ -54,6 +55,29 @@ export default function Nav() {
         window.scrollTo(0,0);
     }
 
+    const openNav = (e:React.MouseEvent<HTMLDivElement>) => {
+        const m  =mobNav.current;
+        if(m) {
+            
+         m.style.transform = `translateX(${0})`;
+        //  m.classList.add('show_nav');
+        }
+
+        e.stopPropagation()
+    }
+
+
+    function removeNav() {
+        const m  =mobNav.current;
+        if(m) {
+            
+         m.style.transform = `translateX(${-20}rem)`;
+        //  m.classList.add('show_nav');
+        }
+
+    }
+    window.addEventListener('click', removeNav);
+
     return (
         <>
 
@@ -68,7 +92,7 @@ export default function Nav() {
                     <div className={styles.logo}>
                         <Image src="/images/codehonslogo.png" alt='logo' width={60} height={60} className={styles.logoImage} priority quality={100}></Image>
                     </div>
-                    <ul className={styles.navbars}>
+                    <ul className={styles.navbars} ref={mobNav} onClick={(e) => e.stopPropagation()}>
                         <li className={styles.nav}><Link className={styles.nav_a} href="/">Home</Link></li>
                         <li className={styles.nav}><Link className={styles.nav_a} href="#contact">Contact</Link></li>
                         <li className={styles.nav}><Link className={styles.nav_a} href="#services">Services</Link></li>
@@ -76,7 +100,7 @@ export default function Nav() {
                         <li className={styles.nav}><Link className={styles.nav_a} href="/products">Products</Link></li>
                     </ul>
 
-                    <div className={styles.open_CONTACT}>
+                    <div className={styles.open_CONTACT} onClick={openNav}>
                         <CiMenuFries />
                     </div>
                 </div>

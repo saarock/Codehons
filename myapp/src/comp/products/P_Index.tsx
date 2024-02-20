@@ -2,10 +2,14 @@ import React from 'react';
 import styles from './Index.module.css';
 import Image from 'next/image';
 
- const P_Index = (productsDetails: Object) => {
+interface Props {
+  details?: {title:string, url:string};
+}
+ const P_Index:React.FC<Props> = ({details}) => {
+  console.log(details)
 
   const goLive = () => {
-    window.open('https://gyanodaya-website.vercel.app/')
+    window.open(details?.url)
   }
   return (
     <>
@@ -16,7 +20,7 @@ import Image from 'next/image';
 
 
       <div className={styles.texts}>
-        <h1>School thems</h1>
+        <h1>{details?.title}</h1>
         <button>Details</button>
         <button onClick={goLive}>Live Demo</button>
       </div>

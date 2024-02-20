@@ -1,6 +1,6 @@
 .all_navs {
     display: flex;
-    justify-content: space-around;
+    justify-content: space-between;
     align-items: center;
     color: white;
 
@@ -53,5 +53,56 @@
     font-size: 2rem;
     cursor: pointer;
     font-weight: bold;
+    display: none;
+}
+
+
+/* responsive */
+@media screen and (max-width: 628px) {
+    .navbars {
+        position: fixed;
+        display: flex;
+        flex-direction: column;
+        background-color: black;
+        left: 0;
+        top: 0;
+        height: 100vh;
+        /* height: 21rem; */
+        justify-content: center;
+        align-items: center;
+        z-index: 1000;
+        transform: translateX(-20rem);
+        
+    }
+
+    .navbars::after {
+        content: "codehons";
+        color: white;
+        position: absolute;
+        top: 5rem;
+        text-transform: uppercase;  
+        font-weight: bold;
+        color: #00cffe;
+        font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+
+    }
+    .open_CONTACT {
+        display: block;
+    }
+
+   
+    .nav {
+        margin: 1.2rem;
+    }
+    .nav_a {
+        margin: 2rem;
+    }
+    
+    
+
+}
+
+.show_nav {
+    transform: translateX(0rem);
 
 }

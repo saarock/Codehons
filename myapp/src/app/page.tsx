@@ -41,9 +41,7 @@ export default function Home() {
         <Services />
         <About />
         <Contact />
-        <div className="what">
-
-        </div>
+    
       </main>
 
     </>

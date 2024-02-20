@@ -49,8 +49,7 @@ export default function Page() {
                         <div className={styles.middle}>
                             <p>
                                 I am m a passionate UI/UX designer with a mission to create delightful and intuitive digital
-                                experiences. With a strong foundation in design principles and a keen eye for detail, I specialize in
-                                translating complex ideas into user-friendly interfaces that captivate and engage.
+                                experiences. 
                             </p>
                         </div>
 
