@@ -47,6 +47,23 @@ export default function Nav() {
     }, [lastScroll]); // Dependency array to ensure useEffect runs only when lastScroll changes
     
 
+    useEffect(() => {
+        function removeNav() {
+            const m  =mobNav.current;
+            if(m) {
+                
+             m.style.transform = `translateX(${-20}rem)`;
+            //  m.classList.add('show_nav');
+            }
+    
+        }
+        window.addEventListener('click', removeNav);
+    
+        return() => {
+            window.removeEventListener('click', removeNav);
+        }
+    }, [])
+
 
 
 
@@ -67,17 +84,7 @@ export default function Nav() {
     }
 
 
-    function removeNav() {
-        const m  =mobNav.current;
-        if(m) {
-            
-         m.style.transform = `translateX(${-20}rem)`;
-        //  m.classList.add('show_nav');
-        }
-
-    }
-    window.addEventListener('click', removeNav);
-
+ 
     return (
         <>
 
