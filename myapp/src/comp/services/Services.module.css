@@ -433,3 +433,47 @@
     overflow: auto;
     height: fit-content;
 }
+
+
+
+/* responsive */
+@media screen and (max-width:1418px) {
+    .bottom {
+        flex-direction: column;
+    }
+
+    .bottom_left {
+        width: 80%;
+
+    }
+
+    .bottom_middle {
+        width: 80%;
+
+    }
+
+    .bottom_right {
+        width: 80%;
+
+    }
+    
+}
+
+@media screen and (max-width:776px) {
+    .middle h2 {
+        font-size: 3rem;
+    }
+    
+}
+
+@media screen and (max-width:604px) {
+    .top h3 {
+        font-size: 1rem;
+
+
+    }
+    .middle h2 {
+        font-size: 2rem;
+    }
+    
+}

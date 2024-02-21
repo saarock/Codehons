@@ -105,6 +105,7 @@ export default function Services() {
                 design and innovation
               </h2>
             </div>
+            
             <div className={styles.bottom}>
               <div
                 className={`${styles.bottom_left} ${hoverDirection}`}
