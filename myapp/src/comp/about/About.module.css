@@ -137,6 +137,20 @@
 
 
 }
+@media screen and (max-width:630px) {
+    .left {
+        text-align: center;
+    }
+    .left h3 {
+        font-size: 1rem;
+
+    }
+    .left h2 {
+        font-size: 2rem;
+
+    }
+
+}
 
 @media screen and (max-width:855px) {
   

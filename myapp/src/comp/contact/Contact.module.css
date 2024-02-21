@@ -269,7 +269,8 @@
     text-align: center;
    }
    .box {
-    width: 90%;
+    width: 75%;
+
     height: fit-content;
     box-shadow: 1rem 1rem #12C2E9;
 
@@ -279,12 +280,31 @@
 
     width: 100%;
     border-radius: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
 
 
    }
    .form {
-    width: 90%;
+    width: 75%;
     box-shadow: 0rem 1rem 1rem #12C2E9;
    }
     
+}
+
+@media screen and (max-width:630px) {
+    .left {
+        text-align: center;
+    }
+    .left_top h3 {
+        font-size: 1rem;
+
+    }
+    .left_middle h2 {
+        font-size: 2rem;
+
+    }
+
 }
