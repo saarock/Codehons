@@ -44,7 +44,9 @@
     font-size: 2rem;
     letter-spacing: 7px;
     margin: 1rem;
-    color: var(--blue-color);
+    color: var(--blue-color);.middle{
+        background-color: rebeccapurple;
+    }
 }
 
 .left_top h3::after {
@@ -254,6 +256,7 @@
     .c_m {
         display: flex;
     justify-content: center;
+    align-items: center;
     }
    .con {
     flex-direction: column;
@@ -272,7 +275,7 @@
     width: 75%;
 
     height: fit-content;
-    box-shadow: 1rem 1rem #12C2E9;
+    /* box-shadow: 1rem 1rem #12C2E9; */
 
    }
 
@@ -295,8 +298,15 @@
 }
 
 @media screen and (max-width:630px) {
-    .left {
-        text-align: center;
+  
+    .left_middle {
+    
+        width: 83%;
+    }
+
+    .left_bottom {
+        width: 83%;
+
     }
     .left_top h3 {
         font-size: 1rem;
@@ -307,4 +317,8 @@
 
     }
 
+}
+
+.middle {
+    width: 90%;
 }
