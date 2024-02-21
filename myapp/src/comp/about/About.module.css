@@ -123,3 +123,60 @@
     bottom: -5rem;
     display: none;
 } */
+
+/* responsive */
+@media screen and (max-width:1302px) {
+    .left h3 {
+        font-size: 1.5rem;
+    }   
+    
+    .left h2 {
+        font-size: 2.5rem;
+
+    }
+
+
+}
+
+@media screen and (max-width:855px) {
+  
+    .ab{
+        display: flex;
+        flex-direction: column;
+    }
+    .right {
+        /* background-color: red; */
+        width: 100%;
+    }
+    .image {
+        width: 100%;
+
+    }
+    .me {
+        width: 100%;
+        height: 80%;
+        clip-path: none;
+        border-radius:2rem;
+        box-shadow: 5rem 1rem 1rem #ff293752;
+    
+    }
+
+    
+}
+
+@media screen and (max-width:435px) {
+  
+    .left h3 {
+        font-size: 1rem;
+
+    }   
+    
+    .left h2 {
+        font-size: 2rem;
+
+
+    }
+
+
+    
+}

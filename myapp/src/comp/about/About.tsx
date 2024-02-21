@@ -5,7 +5,7 @@ export default function About() {
         <>
             <div className={styles.about} id="about">
                 <div className={styles.all_about}>
-                    <div className="mid">
+                    <div className={`mid ${styles.ab}`}>
                         <div className={styles.left}>
                             <h3>ABOUT ME</h3>
                             <h2>Transforming visions into

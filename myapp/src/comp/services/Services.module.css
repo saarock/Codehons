@@ -49,6 +49,7 @@
 
 .middle {
     text-align: center;
+    
 }
 
 .middle h2 {
@@ -372,7 +373,7 @@
     background-color: rgba(0, 0, 0, 0.21);
     background-color: rgb(19, 16, 16);
     /* height: 5rem; */
-    width: 60%;
+    width: 100%;
     margin: 0.6rem;
     /* -webkit-box-shadow: -1px 1px 5px 4px rgba(255, 255, 255, 1);
     -moz-box-shadow: -1px 1px 5px 4px rgba(255, 255, 255, 1);
@@ -456,6 +457,10 @@
         width: 80%;
 
     }
+
+    .rule {
+        width: 80%;
+    }
     
 }
 
@@ -463,10 +468,36 @@
     .middle h2 {
         font-size: 3rem;
     }
+   
+    .playIcon {
+        left: 30%;
+    }
+
+    .rule {
+        
+        font-size: 1rem;
+    }
+    
     
 }
 
 @media screen and (max-width:604px) {
+    .bottom_left {
+        width: 90%;
+
+    }
+
+    .bottom_middle {
+        width: 90%;
+
+
+    }
+
+    .bottom_right {
+        width: 90%;
+
+
+    }
     .top h3 {
         font-size: 1rem;
 
@@ -474,6 +505,13 @@
     }
     .middle h2 {
         font-size: 2rem;
+    }
+    .rule {
+        width: 90%;
+    }
+
+    .rule_ {
+        border: none;
     }
     
 }

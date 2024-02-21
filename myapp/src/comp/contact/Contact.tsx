@@ -68,7 +68,7 @@ export default function Contact() {
                 <div className={styles.shadow3}></div>
 
                 <div className={styles.all_contact}>
-                    <div className="mid">
+                    <div className={`mid ${styles.c_m}`}>
 
                         <div className={styles.con}>
                             <div className={styles.left}>
