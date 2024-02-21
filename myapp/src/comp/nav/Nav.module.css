@@ -68,7 +68,7 @@
         top: 0;
         height: 100vh;
         /* height: 21rem; */
-        justify-content: center;
+        /* justify-content: center; */
         align-items: center;
         z-index: 1000;
         transform: translateX(-20rem);
@@ -79,7 +79,7 @@
         content: "codehons";
         color: white;
         position: absolute;
-        top: 5rem;
+        bottom: 50%;
         text-transform: uppercase;  
         font-weight: bold;
         color: #00cffe;

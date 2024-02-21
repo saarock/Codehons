@@ -262,8 +262,8 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    background-color: red;
-  background: linear-gradient(#0e0f0f, #0088a785);
+   
+  width: 100%;
 
    }
    .left {
@@ -307,6 +307,7 @@
     border-radius: 0;
     border: none;
     box-shadow: 0rem 1rem 1rem #12C2E9;
+    border-radius: 2rem;
    }
    
    .form input {
